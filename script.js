@@ -1,0 +1,4 @@
+$("#submitDay").click(function () {
+    
+}
+
