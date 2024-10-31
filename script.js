@@ -25,17 +25,19 @@ function loadSchedule(dayInput) {
       let scheduledDay = data.schedule.filter((classItem) =>
         classItem.days.includes(dayInput)
       );
-
-      let htmlString = "<tr>";
+      $("#scheduleList").empty();
+      let htmlString = "";
       scheduledDay.forEach((classItem) => {
-        htmlString += `<td> ${classItem.period}</td>
-                        <td> 'NOT DONE YET'</td>
-                         <td> 'NOT DONE YET'</td>
+        htmlString += `
+                <tr>
+                  <td> ${classItem.period}</td>
+                       
                   <td> ${classItem.class}</td>
                   <td> ${classItem.teacher}</td>
-                  <td> ${classItem.room}</td> `;
+                  <td> ${classItem.room}</td>
+                  
+                </tr>`;
       });
-      htmlString += "</tr>";
       $("#scheduleList").append(htmlString);
     },
   });
