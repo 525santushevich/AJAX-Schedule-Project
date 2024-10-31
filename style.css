@@ -7,15 +7,17 @@ h1.text-center {
   font-family: "DynaPuff", system-ui;
   color: rgb(3, 3, 87);
   font-size: 4rem;
+  margin-bottom: 5%;
 }
 
 h3.text-center {
   font-family: "Bebas Neue", sans-serif;
   font-size: 2.5rem;
+  margin-top: 5%;
+  color: rgb(3, 3, 87);
 }
 
 .form-group {
-  margin-top: 5%;
   margin: 0 auto;
 }
 
@@ -28,7 +30,6 @@ label {
   font-family: "Kanit", sans-serif;
   background-color: rgba(65, 5, 50, 0.548);
   border-color: rgba(65, 5, 50, 0.548);
-  border-radius: 4px;
   color: #fff;
   text-align: center;
   transition: all 0.5s;
@@ -56,4 +57,10 @@ button:after {
 button:hover:after {
   opacity: 1;
   right: 10px;
+}
+
+.table {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 3%;
 }
