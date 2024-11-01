@@ -25,6 +25,9 @@ function loadSchedule(dayInput) {
       let scheduledDay = data.schedule.filter((classItem) =>
         classItem.days.includes(dayInput)
       );
+
+      scheduledDay.sort((a, b) => a.period - b.period);
+
       $("#scheduleList").empty();
       let htmlString = "";
       scheduledDay.forEach((classItem) => {

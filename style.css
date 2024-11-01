@@ -3,7 +3,7 @@ body {
 }
 
 h1.text-center {
-  margin-top: 3rem;
+  margin-top: 7rem;
   font-family: "DynaPuff", system-ui;
   color: rgb(3, 3, 87);
   font-size: 4rem;
@@ -39,12 +39,9 @@ label {
   transition: 0.5s;
 }
 
-button:after {
-  content: "»";
-  position: absolute;
-  opacity: 0;
-  right: -20px;
-  transition: 0.5s;
+button:active {
+  background-color: rgba(65, 5, 50, 0.548);
+  border-color: rgba(65, 5, 50, 0.548);
 }
 
 .btn:hover {
@@ -52,6 +49,15 @@ button:after {
   border-color: rgba(65, 5, 50, 0.548);
   padding-right: 24px;
   padding-left: 8px;
+  color: white;
+}
+
+button:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  right: -20px;
+  transition: 0.5s;
 }
 
 button:hover:after {
@@ -63,4 +69,12 @@ button:hover:after {
   width: 70%;
   margin: 0 auto;
   margin-top: 3%;
+}
+
+.form-control {
+  width: 50%;
+}
+
+.table {
+  box-shadow: 2px 2px 2px 2px rgba(65, 5, 50, 0.253);
 }
